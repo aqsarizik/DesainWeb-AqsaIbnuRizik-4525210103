@@ -42,5 +42,7 @@ Dapur Betawi adalah website sederhana bertema restoran yang memperkenalkan masak
 Website Dapur Betawi merupakan contoh website restoran sederhana yang dibuat menggunakan HTML dan CSS. Website ini menyajikan informasi restoran dan menu secara terstruktur, serta memiliki tampilan responsif agar lebih nyaman diakses melalui berbagai ukuran layar.
 
 ## Hasil
-## lingkaran
-![alt text]()
+![alt text](https://github.com/aqsarizik/DesainWeb-AqsaIbnuRizik-4525210103/blob/main/DW_06_Quis_kelompok/images/depan.png)
+![alt text](https://github.com/aqsarizik/DesainWeb-AqsaIbnuRizik-4525210103/blob/main/DW_06_Quis_kelompok/images/tengah.png)
+![alt text](https://github.com/aqsarizik/DesainWeb-AqsaIbnuRizik-4525210103/blob/main/DW_06_Quis_kelompok/images/akhir.png)
+
