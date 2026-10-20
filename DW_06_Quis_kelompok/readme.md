@@ -1,4 +1,9 @@
 ### Website Dapur Betawi
+### Anggota:
+Irvan Indra Mustofa (4525210107)
+Rayza Aqsa Aditya (4525210101)
+Aqsa Ibnu Rizik (4525210103)
+
 ## 1. Deskripsi
 Dapur Betawi adalah website sederhana bertema restoran yang memperkenalkan masakan khas Jakarta. Website ini menampilkan informasi restoran, keunggulan layanan, daftar menu beserta harga, dan bagian reservasi. 
 
@@ -35,3 +40,5 @@ Dapur Betawi adalah website sederhana bertema restoran yang memperkenalkan masak
 
 ## 8. Kesimpulan
 Website Dapur Betawi merupakan contoh website restoran sederhana yang dibuat menggunakan HTML dan CSS. Website ini menyajikan informasi restoran dan menu secara terstruktur, serta memiliki tampilan responsif agar lebih nyaman diakses melalui berbagai ukuran layar.
+
+## Hasil
