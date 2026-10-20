@@ -22,9 +22,11 @@ Dapur Betawi adalah website sederhana bertema restoran yang memperkenalkan masak
 6. Desain responsif — tata letak menyesuaikan ukuran layar desktop, tablet, dan ponsel melalui media query CSS.
 5. Struktur Folder
 Contoh1_pp/
-├── index.html
+├──
+    index.html
 ├── CSS/
-│   └── style.css
+│
+└── style.css
 └── images/
     ├── bubur.jpg
     ├── ketoprak.png
