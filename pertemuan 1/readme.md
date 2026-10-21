@@ -25,10 +25,10 @@ Halaman Profil Mahasiswa merupakan tugas praktikum Desain Web yang dibuat menggu
 Halaman profil mahasiswa berhasil dibuat menggunakan HTML dasar. Informasi ditampilkan dengan judul, paragraf, teks tebal, teks miring, garis bawah, dan karakter khusus.
 
 Source Code :
-![html]()
+![html](https://github.com/aqsarizik/DesainWeb-AqsaIbnuRizik-4525210103/blob/main/pertemuan%201/dokumentasi/Source%20Code.png)
 
 hasil :
-![html]()
+![html](https://github.com/aqsarizik/DesainWeb-AqsaIbnuRizik-4525210103/blob/main/pertemuan%201/dokumentasi/hasil.png)
 
 ## Kesimpulan
 Praktikum ini membantu memahami struktur dasar HTML serta penggunaan berbagai tag untuk menyusun dan memformat konten pada halaman web.
