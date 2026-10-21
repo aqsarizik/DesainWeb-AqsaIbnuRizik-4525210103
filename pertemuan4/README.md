@@ -27,13 +27,13 @@
 ## 4. Dokumentasi Screenshot
 Folder `screenshots/` berisi dokumentasi tampilan sebelum dan sesudah perubahan pada desktop serta perangkat seluler:
 -  tampilan sebelum perubahan pada desktop.
-![html]()
+![html](https://github.com/aqsarizik/DesainWeb-AqsaIbnuRizik-4525210103/blob/main/pertemuan4/screenshots/sebelum-desktop.png)
 -  tampilan sebelum perubahan pada perangkat seluler.
-![html]()
+![html](https://github.com/aqsarizik/DesainWeb-AqsaIbnuRizik-4525210103/blob/main/pertemuan4/screenshots/sebelum-mobile.png)
 - tampilan setelah perubahan pada desktop.
-![html]()
+![html](https://github.com/aqsarizik/DesainWeb-AqsaIbnuRizik-4525210103/blob/main/pertemuan4/screenshots/sesudah-desktop.png)
 -  tampilan setelah perubahan pada perangkat seluler.
-![html]()
+![html](https://github.com/aqsarizik/DesainWeb-AqsaIbnuRizik-4525210103/blob/main/pertemuan4/screenshots/sesudah-mobile.png)
 
 ## 5. Kesimpulan
 Melalui proyek Arunika Studio, struktur halaman HTML dan pengaturan tampilan CSS disusun agar lebih terorganisasi. Penggunaan CSS Grid, Flexbox, variabel CSS, dan media query membantu menghasilkan landing page yang lebih mudah dikelola dan menyesuaikan tampilan pada desktop maupun perangkat seluler. Pemisahan HTML dan CSS juga memudahkan pengembangan website pada tahap berikutnya.
