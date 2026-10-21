@@ -23,10 +23,10 @@
 Hasil Praktikum
 
 Source Code :
-![html]()
+![html](https://github.com/aqsarizik/DesainWeb-AqsaIbnuRizik-4525210103/blob/main/pertemuan%202/images/coding.png)
 
 hasil :
-![html]()
+![html](https://github.com/aqsarizik/DesainWeb-AqsaIbnuRizik-4525210103/blob/main/pertemuan%202/images/hasil.png)
 
 Kesimpulan
 
