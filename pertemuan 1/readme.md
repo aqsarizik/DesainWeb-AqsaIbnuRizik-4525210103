@@ -26,8 +26,8 @@ Halaman profil mahasiswa berhasil dibuat menggunakan HTML dasar. Informasi ditam
 
 Source Code :
 ![html](https://github.com/aqsarizik/DesainWeb-AqsaIbnuRizik-4525210103/blob/main/pertemuan%201/dokumentasi/Source%20Code.png)
+Hasil:
 
-hasil :
 ![html](https://github.com/aqsarizik/DesainWeb-AqsaIbnuRizik-4525210103/blob/main/pertemuan%201/dokumentasi/hasil.png)
 
 ## Kesimpulan
