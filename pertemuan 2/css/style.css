@@ -1,0 +1,114 @@
+/* Pengaturan dasar */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Bagian header */
+header {
+    background-color: #164e8c;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+/* Logo organisasi kampus */
+.logo-organisasi {
+    display: block;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin: 15px auto;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px;
+}
+
+/* Navigasi */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+/* Garis pemisah */
+hr {
+    border: none;
+    border-top: 2px solid #d5dfeb;
+    margin: 0;
+}
+
+/* Bagian konten */
+section {
+    background-color: white;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    color: #164e8c;
+    border-bottom: 2px solid #164e8c;
+    padding-bottom: 8px;
+}
+
+/* Daftar kegiatan */
+.daftar-kegiatan {
+    padding-left: 25px;
+}
+
+.daftar-kegiatan li {
+    margin-bottom: 10px;
+}
+
+/* Tautan */
+section a {
+    color: #164e8c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* Tampilan HP */
+@media screen and (max-width: 600px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    .logo-organisasi {
+        width: 90px;
+        height: 90px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    section {
+        margin: 15px 10px;
+        padding: 18px;
+    }
+}
