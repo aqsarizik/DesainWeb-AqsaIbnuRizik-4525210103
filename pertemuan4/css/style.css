@@ -1,0 +1,155 @@
+/* =========================================================
+   Arunika Studio – style.css (satu-satunya file CSS)
+   Daftar isi: 1 Reset & variabel · 2 Class reusable
+               3 Header · 4 Hero · 5 Layanan · 6 Footer
+               7 Responsive (< 768px)
+   ========================================================= */
+
+/* 1. RESET & VARIABEL ------------------------------------ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;   /* padding & border ikut dihitung dalam width */
+}
+
+:root {
+  --ink: #1d2340;
+  --muted: #55607a;
+  --dawn: #f2a65a;
+  --dawn-soft: #fde9d3;
+  --sky: #eef3f9;
+  --white: #ffffff;
+  --radius: 12px;
+  --space: 24px;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", system-ui, -apple-system, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--ink);
+  background: var(--sky);
+}
+
+h1, h2, h3, p { margin: 0; }
+
+/* 2. CLASS REUSABLE -------------------------------------- */
+
+/* .container : membatasi lebar konten & memberi jarak tepi */
+.container {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;           /* tengah */
+  padding: 0 var(--space);
+}
+
+/* .card : kotak konten (padding + border + margin lewat gap) */
+.card {
+  background: var(--white);
+  padding: var(--space);
+  border: 1px solid #dbe3ee;
+  border-radius: var(--radius);
+}
+
+/* .btn : tombol */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: var(--ink);
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 999px;
+}
+.btn:hover,
+.btn:focus-visible { background: #2f3a6b; }
+
+/* 3. HEADER ---------------------------------------------- */
+.site-header {
+  background: var(--ink);
+  color: var(--white);
+}
+.site-header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.brand {
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.nav a {
+  color: var(--white);
+  margin-left: var(--space);
+  text-decoration: none;
+}
+.nav a:hover { text-decoration: underline; }
+
+/* 4. HERO ------------------------------------------------ */
+.hero {
+  background: var(--dawn-soft);
+  padding: 96px 0;
+}
+.hero__title {
+  max-width: 14ch;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.25rem;
+  line-height: 1.15;
+}
+.hero__text {
+  max-width: 52ch;
+  margin: 20px 0 32px;
+  color: var(--muted);
+  font-size: 1.125rem;
+}
+
+/* 5. LAYANAN --------------------------------------------- */
+.section { padding: 72px 0; }
+.section__title {
+  margin-bottom: 32px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 2rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* desktop: 3 kolom */
+  gap: var(--space);
+}
+.card__title {
+  margin-bottom: 8px;
+  font-size: 1.25rem;
+}
+.card__text { color: var(--muted); }
+
+/* 6. FOOTER ---------------------------------------------- */
+.site-footer {
+  background: var(--ink);
+  color: var(--white);
+  padding: 32px 0;
+  text-align: center;
+}
+.site-footer p + p {
+  margin-top: 4px;
+  font-size: 0.875rem;
+  opacity: 0.75;
+}
+
+/* 7. RESPONSIVE (< 768px) -------------------------------- */
+@media (max-width: 767px) {
+  .hero { padding: 56px 0; }
+  .hero__title { font-size: 2.25rem; }
+
+  .section { padding: 48px 0; }
+
+  .cards { grid-template-columns: 1fr; }   /* 3 card -> 1 kolom */
+
+  .site-header__inner {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .nav a { margin: 0 12px; }
+}
