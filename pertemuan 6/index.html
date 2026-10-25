@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mockup dashboard aplikasi belajar dengan Simple Design System.">
+  <title>RuangBelajar — Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="RuangBelajar beranda">
+        <span class="brand-mark">R</span>
+        <span>Ruang<span class="brand-light">Belajar</span></span>
+      </a>
+      <p class="nav-label">MENU UTAMA</p>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a class="nav-item active" href="#"><span class="nav-icon">⌂</span> Dashboard</a>
+        <a class="nav-item" href="#kelas"><span class="nav-icon">▤</span> Kelas Saya</a>
+        <a class="nav-item" href="#jadwal"><span class="nav-icon">▦</span> Jadwal</a>
+        <a class="nav-item" href="#tugas"><span class="nav-icon">✓</span> Tugas</a>
+        <a class="nav-item" href="#komunitas"><span class="nav-icon">◎</span> Komunitas</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card">
+          <span class="help-icon">?</span>
+          <strong>Butuh bantuan?</strong>
+          <p>Tim kami siap membantu proses belajarmu.</p>
+          <a href="#bantuan">Pusat Bantuan <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="profile-mini">
+          <div class="avatar">A</div>
+          <div><strong>Aqsa Rizik</strong><small>Mahasiswa</small></div>
+          <span class="more">•••</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark">R</span> RuangBelajar</div>
+        <div class="breadcrumb">Halaman <span>/</span> <strong>Dashboard</strong></div>
+        <div class="top-actions">
+          <button class="icon-button" type="button" aria-label="Notifikasi">♧<i></i></button>
+          <div class="top-user"><div class="avatar avatar-small">A</div><span>Aqsa Rizik</span><span class="chevron">⌄</span></div>
+        </div>
+      </header>
+
+      <section class="welcome-row">
+        <div>
+          <p class="eyebrow">SABTU, 25 OKTOBER 2026</p>
+          <h1>Selamat datang, Aqsa! <span class="wave">✦</span></h1>
+          <p class="muted welcome-copy">Siap melanjutkan perjalanan belajarmu hari ini?</p>
+        </div>
+        <button class="button button-primary" type="button"><span>＋</span> Jelajahi Kelas</button>
+      </section>
+
+      <section class="stats-grid" aria-label="Ringkasan aktivitas belajar">
+        <article class="stat-card">
+          <div class="stat-top"><span class="stat-icon purple">▤</span><span class="trend">↗ 12%</span></div>
+          <p class="stat-label">Kelas Diikuti</p><div class="stat-value">08 <span>kelas</span></div>
+          <div class="mini-track"><span class="track-purple"></span></div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span class="stat-icon mint">◷</span><span class="trend">+2 jam</span></div>
+          <p class="stat-label">Waktu Belajar</p><div class="stat-value">24,5 <span>jam</span></div>
+          <div class="mini-track"><span class="track-mint"></span></div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span class="stat-icon orange">✓</span><span class="trend">Bagus!</span></div>
+          <p class="stat-label">Tugas Selesai</p><div class="stat-value">18 <span>/ 22 tugas</span></div>
+          <div class="mini-track"><span class="track-orange"></span></div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-top"><span class="stat-icon blue">♧</span><span class="trend">Level 4</span></div>
+          <p class="stat-label">Poin Pengalaman</p><div class="stat-value">1.280 <span>XP</span></div>
+          <div class="mini-track"><span class="track-blue"></span></div>
+        </article>
+      </section>
+
+      <div class="content-grid">
+        <section class="panel courses-panel" id="kelas">
+          <div class="section-heading">
+            <div><h2>Lanjutkan Belajar</h2><p class="muted">Kembali ke materi terakhir yang kamu buka.</p></div>
+            <a class="text-link" href="#semua-kelas">Lihat semua <span>→</span></a>
+          </div>
+          <article class="course-card">
+            <div class="course-art art-purple"><span class="art-orbit"></span><span class="art-symbol">&lt;/&gt;</span><span class="art-tag">DEVELOPMENT</span></div>
+            <div class="course-info">
+              <div class="course-meta"><span class="pill pill-purple">Pemula</span><span class="muted small">12 modul</span></div>
+              <h3>Dasar Pemrograman Web</h3>
+              <p class="muted small">Belajar HTML, CSS, dan dasar membangun website.</p>
+              <div class="progress-label"><span>Progress belajar</span><strong>68%</strong></div>
+              <div class="progress-bar"><span style="width:68%"></span></div>
+              <button class="button button-primary button-small" type="button">Lanjutkan Materi <span>→</span></button>
+            </div>
+          </article>
+          <article class="course-card course-card-second">
+            <div class="course-art art-green"><span class="art-orbit"></span><span class="art-symbol">{ }</span><span class="art-tag">PROGRAMMING</span></div>
+            <div class="course-info">
+              <div class="course-meta"><span class="pill pill-green">Menengah</span><span class="muted small">16 modul</span></div>
+              <h3>Logika dan Algoritma</h3>
+              <p class="muted small">Pahami alur berpikir untuk menyelesaikan masalah.</p>
+              <div class="progress-label"><span>Progress belajar</span><strong>35%</strong></div>
+              <div class="progress-bar green-progress"><span style="width:35%"></span></div>
+              <button class="button button-outline button-small" type="button">Lanjutkan Materi <span>→</span></button>
+            </div>
+          </article>
+        </section>
+
+        <aside class="right-column">
+          <section class="panel schedule-panel" id="jadwal">
+            <div class="section-heading"><div><h2>Jadwal Hari Ini</h2><p class="muted">Sabtu, 25 Oktober</p></div><button class="dots-button" type="button" aria-label="Pilihan jadwal">•••</button></div>
+            <div class="schedule-item">
+              <div class="time-block"><strong>09:00</strong><span>10:30</span></div>
+              <div class="schedule-line purple-line"></div>
+              <div class="schedule-detail"><strong>UI Design Fundamentals</strong><span class="muted small">Modul 04 · Live class</span><span class="schedule-tag tag-live">● Akan dimulai</span></div>
+            </div>
+            <div class="schedule-item">
+              <div class="time-block"><strong>13:00</strong><span>14:00</span></div>
+              <div class="schedule-line green-line"></div>
+              <div class="schedule-detail"><strong>Dasar Pemrograman Web</strong><span class="muted small">Modul 08 · Video</span><span class="schedule-tag tag-video">▶ Materi video</span></div>
+            </div>
+            <a class="full-link" href="#jadwal-lengkap">Lihat jadwal lengkap <span>→</span></a>
+          </section>
+
+          <section class="panel task-panel" id="tugas">
+            <div class="section-heading"><div><h2>Tugas Mendatang</h2><p class="muted">Jangan lewatkan tenggatnya.</p></div><span class="task-count">3</span></div>
+            <div class="task-item"><span class="task-check"></span><div class="task-description"><strong>Landing Page Responsif</strong><span class="muted small">Desain Web</span></div><span class="due soon">Besok</span></div>
+            <div class="task-item"><span class="task-check"></span><div class="task-description"><strong>Latihan Algoritma</strong><span class="muted small">Pemrograman</span></div><span class="due">28 Okt</span></div>
+            <div class="task-item"><span class="task-check"></span><div class="task-description"><strong>Review Materi UI</strong><span class="muted small">UI Design</span></div><span class="due">30 Okt</span></div>
+            <button class="button button-outline button-full" type="button">Buka Daftar Tugas <span>→</span></button>
+          </section>
+        </aside>
+      </div>
+      <footer class="footer"><span>© 2026 RuangBelajar</span><span>Belajar sedikit demi sedikit, tumbuh setiap hari ✦</span></footer>
+    </main>
+  </div>
+</body>
+</html>
