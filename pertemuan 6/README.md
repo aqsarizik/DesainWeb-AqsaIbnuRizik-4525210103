@@ -31,8 +31,9 @@ Dekstop :
 ![alt text](gambar/dekstop.jpeg)
 
 Mobail :
+
 ![alt text](gambar/mobail.jpeg)
 
-## 8. Kesimpulan
+## 4. Kesimpulan
 
 Simple Design System RuangBelajar menyatukan aturan warna, typography, spacing, tombol, kontrol form, dan kartu agar tampilan lebih konsisten serta mudah dikembangkan. Penerapan pada dashboard menunjukkan penggunaan komponen berulang dan layout responsif untuk desktop serta mobile.
