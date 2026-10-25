@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Portal Perpustakaan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Portal Perpustakaan">
+      <span class="brand-mark">📚</span>
+      <span><strong>PerpusKita</strong><small>Portal Perpustakaan Kampus</small></span>
+    </a>
+    <div class="profile">
+      <div class="avatar">AI</div>
+      <div class="profile-info"><strong>Aqsa Ibnu</strong><small>Mahasiswa</small></div>
+      <span class="chevron">⌄</span>
+    </div>
+  </header>
+
+  <div class="page-shell">
+    <aside class="sidebar">
+      <p class="menu-label">MENU UTAMA</p>
+      <a class="side-link active" href="#"><span>⌂</span> Beranda</a>
+      <a class="side-link" href="#"><span>▤</span> Daftar Buku</a>
+      <a class="side-link" href="#"><span>↗</span> Peminjaman</a>
+      <a class="side-link" href="#"><span>♡</span> Layanan</a>
+      <a class="side-link" href="#"><span>✉</span> Kontak</a>
+      <div class="sidebar-note">
+        <span class="note-icon">💡</span>
+        <strong>Tips membaca</strong>
+        <p>Luangkan waktu membaca sedikit demi sedikit setiap hari.</p>
+      </div>
+    </aside>
+
+    <main class="content">
+      <section class="welcome">
+        <div>
+          <p class="eyebrow">DASHBOARD PERPUSTAKAAN</p>
+          <h1>Selamat datang di PerpusKita! 👋</h1>
+          <p class="welcome-copy">Temukan bacaan baru dan pantau aktivitas perpustakaanmu di sini.</p>
+        </div>
+        <div class="welcome-art" aria-hidden="true"><span>📖</span><i>✦</i></div>
+      </section>
+
+      <section class="stats" aria-label="Ringkasan perpustakaan">
+        <article class="stat-card">
+          <div class="stat-icon purple">▤</div><div><p>Total Koleksi Buku</p><h2>2.450</h2><small>Judul tersedia</small></div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-icon green">↗</div><div><p>Buku Dipinjam</p><h2>128</h2><small>Seluruh mahasiswa</small></div>
+        </article>
+        <article class="stat-card">
+          <div class="stat-icon orange">◷</div><div><p>Peminjaman Saya</p><h2>2</h2><small>Masih aktif</small></div>
+        </article>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <div><h2>Buku Best Seller</h2><p>Bacaan yang paling banyak diminati minggu ini</p></div>
+          <a href="#" class="text-link">Lihat semua <span>→</span></a>
+        </div>
+        <div class="book-grid">
+          <article class="book-card">
+            <div class="book-cover cover-blue"><span class="cover-kicker">PENGEMBANGAN DIRI</span><strong>Atomic<br>Habits</strong><small>James Clear</small><b class="cover-shape">◉</b></div>
+            <div class="book-details"><span class="category">Pengembangan Diri</span><h3>Atomic Habits</h3><p>James Clear</p><div class="book-bottom"><span class="rating">★ 4.9</span><span class="available">Tersedia</span></div></div>
+          </article>
+          <article class="book-card">
+            <div class="book-cover cover-cream"><span class="cover-kicker">FIKSI</span><strong>Laut<br>Bercerita</strong><small>Leila S. Chudori</small><b class="cover-shape">≈</b></div>
+            <div class="book-details"><span class="category">Novel</span><h3>Laut Bercerita</h3><p>Leila S. Chudori</p><div class="book-bottom"><span class="rating">★ 4.8</span><span class="available">Tersedia</span></div></div>
+          </article>
+          <article class="book-card">
+            <div class="book-cover cover-green"><span class="cover-kicker">TEKNOLOGI</span><strong>Dasar<br>Pemrograman</strong><small>Tim Edukasi</small><b class="cover-shape">{ }</b></div>
+            <div class="book-details"><span class="category">Teknologi</span><h3>Dasar Pemrograman</h3><p>Tim Edukasi</p><div class="book-bottom"><span class="rating">★ 4.7</span><span class="available">Tersedia</span></div></div>
+          </article>
+          <article class="book-card">
+            <div class="book-cover cover-pink"><span class="cover-kicker">BISNIS</span><strong>Start With<br>Why</strong><small>Simon Sinek</small><b class="cover-shape">✳</b></div>
+            <div class="book-details"><span class="category">Bisnis</span><h3>Start With Why</h3><p>Simon Sinek</p><div class="book-bottom"><span class="rating">★ 4.6</span><span class="available">Tersedia</span></div></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="lower-grid">
+        <article class="panel">
+          <div class="section-heading compact"><div><h2>Aktivitas Peminjaman</h2><p>Ringkasan peminjaman terakhirmu</p></div><a href="#" class="text-link">Detail →</a></div>
+          <div class="loan-row"><div class="mini-book purple-book">A</div><div class="loan-info"><strong>Algoritma dan Pemrograman</strong><small>Dipinjam 20 Okt 2026</small></div><span class="status due">Segera kembali</span></div>
+          <div class="loan-row"><div class="mini-book yellow-book">D</div><div class="loan-info"><strong>Desain Antarmuka Pengguna</strong><small>Dipinjam 22 Okt 2026</small></div><span class="status safe">Aktif</span></div>
+        </article>
+        <article class="panel hours-panel">
+          <div class="section-heading compact"><div><h2>Jam Operasional</h2><p>Perpustakaan kampus</p></div></div>
+          <div class="hours-row"><span>Senin – Jumat</span><strong>08.00 – 16.00</strong></div>
+          <div class="hours-row"><span>Sabtu</span><strong>09.00 – 13.00</strong></div>
+          <div class="hours-row"><span>Minggu</span><span class="closed">Tutup</span></div>
+          <div class="contact-hint">Butuh bantuan? <a href="#">Hubungi petugas</a></div>
+        </article>
+      </section>
+
+      <footer><span>© 2026 PerpusKita · Portal Perpustakaan Kampus</span><span>Wireframe HTML &amp; CSS</span></footer>
+    </main>
+  </div>
+</body>
+</html>
