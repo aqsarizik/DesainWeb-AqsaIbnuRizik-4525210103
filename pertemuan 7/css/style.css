@@ -1,0 +1,321 @@
+/* ==========================================================
+   style.css — Form registrasi Pekan Web Nusantara 2026
+   Struktur: 1) Token  2) Reset  3) Layout  4) Panel acara
+             5) Form   6) Status valid  7) Responsif
+   ========================================================== */
+
+/* ---------- 1. Design token ---------- */
+:root {
+  --bg: #e9efec;
+  --surface: #ffffff;
+  --ink: #10201c;
+  --ink-soft: #4a5b56;
+  --forest: #0f3d33;
+  --forest-ink: #e6f1ed;
+  --accent: #f2b134;
+  --line: #c3cfc9;
+  --focus: #1f6f5c;
+  --error: #b3261e;
+  --error-bg: #fdecea;
+  --ok: #1f6f5c;
+
+  --font-head: "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-body: "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --radius: 10px;
+  --space: 1.25rem;
+}
+
+/* ---------- 2. Reset ringan ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+h1, h2 {
+  font-family: var(--font-head);
+  line-height: 1.1;
+  margin: 0;
+}
+
+/* ---------- 3. Layout halaman ---------- */
+.page {
+  display: grid;
+  grid-template-columns: minmax(280px, 5fr) 7fr;
+  min-height: 100vh;
+}
+
+/* ---------- 4. Panel informasi acara ---------- */
+.event {
+  background: var(--forest);
+  color: var(--forest-ink);
+  padding: clamp(1.5rem, 5vw, 4rem);
+  position: sticky;
+  top: 0;
+  align-self: start;
+  min-height: 100vh;
+}
+
+.event__date {
+  display: inline-block;
+  margin: 0 0 1.5rem;
+  padding: 0.3rem 0.8rem;
+  background: var(--accent);
+  color: var(--ink);
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.event__title {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.event__lead {
+  max-width: 34ch;
+  margin: 1.25rem 0 2rem;
+  font-size: 1.1rem;
+  color: #bfd6cf;
+}
+
+.event__facts {
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.event__facts div {
+  border-left: 3px solid var(--accent);
+  padding-left: 0.9rem;
+}
+
+.event__facts dt {
+  font-size: 0.85rem;
+  color: #9fbdb4;
+}
+
+.event__facts dd {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* ---------- 5. Panel & elemen form ---------- */
+.panel {
+  padding: clamp(1.5rem, 5vw, 4rem);
+  max-width: 44rem;
+  width: 100%;
+}
+
+.panel__title {
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+}
+
+.panel__hint {
+  margin: 0.4rem 0 1.75rem;
+  color: var(--ink-soft);
+}
+
+.field {
+  margin: 0 0 var(--space);
+  padding: 0;
+  border: 0;
+  min-width: 0; /* mencegah fieldset melebar di layar kecil */
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 var(--space);
+}
+
+label,
+legend {
+  display: block;
+  padding: 0;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+
+legend small {
+  font-weight: 400;
+  color: var(--ink-soft);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.7rem 0.85rem;
+  font: inherit;
+  color: var(--ink);
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+  border-radius: var(--radius);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 7rem;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  border-color: var(--focus);
+  box-shadow: 0 0 0 3px rgba(31, 111, 92, 0.25);
+}
+
+/* Radio & checkbox */
+.choices {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.choices--inline {
+  grid-auto-flow: column;
+  justify-content: start;
+  gap: 1.5rem;
+}
+
+.choice {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin: 0;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.choice input {
+  flex: none;
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.2rem;
+  accent-color: var(--forest);
+}
+
+.choice input:focus-visible {
+  outline: 3px solid rgba(31, 111, 92, 0.4);
+  outline-offset: 2px;
+}
+
+/* Teks bantu */
+.hint {
+  margin: 0.35rem 0 0;
+  font-size: 0.875rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- 6. Status valid / tidak valid ---------- */
+/* :user-invalid hanya aktif setelah pengguna berinteraksi dengan field */
+input:user-invalid,
+select:user-invalid,
+textarea:user-invalid {
+  border-color: var(--error);
+  background: var(--error-bg);
+}
+
+input:user-valid:not([type="radio"]):not([type="checkbox"]),
+select:user-valid,
+textarea:user-valid {
+  border-color: var(--ok);
+}
+
+/* Tombol */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.75rem;
+}
+
+.btn {
+  padding: 0.8rem 1.4rem;
+  font: inherit;
+  font-weight: 600;
+  border-radius: var(--radius);
+  border: 2px solid var(--forest);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.btn--primary {
+  background: var(--forest);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background: #0a2c25;
+}
+
+.btn--ghost {
+  background: transparent;
+  color: var(--forest);
+}
+
+.btn--ghost:hover {
+  background: rgba(15, 61, 51, 0.08);
+}
+
+.btn:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+/* ---------- 7. Responsif ---------- */
+@media (max-width: 860px) {
+  .page {
+    grid-template-columns: 1fr;
+  }
+
+  .event {
+    position: static;
+    min-height: 0;
+  }
+
+  .panel {
+    max-width: none;
+  }
+}
+
+@media (max-width: 540px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .choices--inline {
+    grid-auto-flow: row;
+    gap: 0.5rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
