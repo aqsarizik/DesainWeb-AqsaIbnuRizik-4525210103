@@ -1,0 +1,149 @@
+/* Gaya tambahan Dashboard Akademik */
+:root {
+    --primary: #3157d5;
+    --dark: #18233b;
+    --muted: #758099;
+    --page-bg: #f5f7fb;
+}
+
+body {
+    background: var(--page-bg);
+    color: #202a3c;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topbar {
+    background: var(--dark);
+    box-shadow: 0 2px 12px rgba(20, 32, 57, 0.12);
+}
+
+.brand-dot {
+    color: #8ea7ff;
+}
+
+.section-label {
+    color: var(--primary);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.page-title {
+    color: var(--dark);
+    font-size: clamp(1.65rem, 3vw, 2.15rem);
+    font-weight: 700;
+}
+
+.btn-primary {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background: #2445b7;
+    border-color: #2445b7;
+}
+
+.stat-card,
+.content-panel {
+    background: #fff;
+    border: 1px solid #e9edf5;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(30, 48, 85, 0.045);
+}
+
+.stat-card {
+    padding: 1.25rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 9px 22px rgba(30, 48, 85, 0.09);
+}
+
+.stat-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+
+.stat-icon {
+    display: inline-flex;
+    width: 42px;
+    height: 42px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.icon-blue { background: #e9efff; color: #3157d5; }
+.icon-purple { background: #f1eaff; color: #8054c7; }
+.icon-orange { background: #fff1e4; color: #d77b27; }
+.icon-green { background: #e5f7ef; color: #26966a; }
+
+.stat-caption {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+}
+
+.stat-number {
+    color: var(--dark);
+    font-size: 1.9rem;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+}
+
+.stat-note {
+    color: #98a1b2;
+    font-size: 0.78rem;
+}
+
+.content-panel {
+    padding: 1.25rem;
+}
+
+.panel-title {
+    color: var(--dark);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.table {
+    min-width: 760px;
+    font-size: 0.9rem;
+}
+
+.table thead th {
+    background: #f0f3fa;
+    color: #47536b;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding: 0.9rem 0.75rem;
+    white-space: nowrap;
+}
+
+.table tbody td,
+.table tbody th {
+    color: #4c5870;
+    padding: 0.85rem 0.75rem;
+    white-space: nowrap;
+}
+
+.table tbody tr:hover > * {
+    --bs-table-accent-bg: #f3f6ff;
+}
+
+@media (max-width: 575.98px) {
+    .content-panel {
+        padding: 1rem;
+    }
+
+    .stat-card {
+        padding: 1.1rem;
+    }
+}
